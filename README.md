@@ -26,12 +26,21 @@ GOAL
 Design and write a program implementing the above specifications and validating the following test.
 
 TEST
+
 This file is given in input:
+
 5 5
+
 1 2 N
+
 LFLFLFLFF
+
 3 3 E
+
 FFRFFRFRRF
+
 This output is expected (final positions of mowers):
+
 1 3 N
+
 5 1 E
