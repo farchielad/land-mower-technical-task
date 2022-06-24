@@ -1,19 +1,19 @@
 export default class MowerController {
     constructor(lawnMower) {
-      this.lawnMower = lawnMower
+      this.lawnMower = lawnMower;
     }
   
     executeMovementAndOrientationSequence(mowerOrientationAndForwardingSequence) {
       mowerOrientationAndForwardingSequence.forEach((sequenceCommand) => {
         switch(sequenceCommand) {
           case 'L':
-            this.lawnMower.rotateLandMower90DegreesLeft();
+            this.lawnMower.rotateLawnMower90DegreesLeft();
             break;
           case 'R':
-            this.lawnMower.rotateLandMower90DegreesRight();
+            this.lawnMower.rotateLawnMower90DegreesRight();
             break;
           case 'F':
-            this.lawnMower.advanceLandMowerForwardOneStep();
+            this.lawnMower.advanceLawnMowerForwardOneStep();
             break;
         }
       })
