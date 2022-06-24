@@ -17,17 +17,17 @@ describe('Lawn LawnMower', function() {
   });
 
   describe('validate rotations and forward movement', function () {
-    context('Should be set at [1,1,N]', function () {
+    context('check initial positioning', function () {
       let lawnMower = new LawnMower([1, 1], 'N', [5, 5]);
-
-      it('should rotate 90 degrees left', function () {
-        lawnMower.rotateLawnMower90DegreesLeft();
-        assert.equal(lawnMower.direction, 'N')
-      });
 
       it('should rotate 90 degrees right', function () {
         lawnMower.rotateLawnMower90DegreesRight();
         assert.equal(lawnMower.direction, 'E')
+      });
+
+      it('should rotate 90 degrees left', function () {
+        lawnMower.rotateLawnMower90DegreesLeft();
+        assert.equal(lawnMower.direction, 'N')
       });
 
       it('should advance one step forward', function () {
