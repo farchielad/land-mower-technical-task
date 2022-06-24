@@ -44,3 +44,9 @@ This output is expected (final positions of mowers):
 1 3 N
 
 5 1 E
+
+How to run.
+After cloning the project, run using: npm start
+test using: npm test
+
+Node version: v18.4.0
