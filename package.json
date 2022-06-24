@@ -1,0 +1,15 @@
+{
+  "name": "land_mower_technical_task",
+  "version": "1.0.0",
+  "description": "Lawn mower technical task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-spies": "^1.0.0",
+    "mocha": "^10.0.0"
+  }
+}
