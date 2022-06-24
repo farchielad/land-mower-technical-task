@@ -80,13 +80,9 @@ class MowerController {
   }
 };
 
-const data = [
-    '5 5',
-    '1 2 N',
-    'LFLFLFLFF',
-    '3 3 E',
-    'FFRFFRFRRF',
-]
+const fs = require('fs');
+const path = require('path');
+const data = fs.readFileSync(path.resolve(__dirname, '../sampleData.txt'), 'utf8').split("\n");
 // first row in the file represents the lawn as a matrix, represented as width and height
 const lawn = data[0].split(' ').map(character => parseInt(character));
 
