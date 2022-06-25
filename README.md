@@ -45,8 +45,14 @@ This output is expected (final positions of mowers):
 
 5 1 E
 
-How to run.
-After cloning the project, run using: npm start
-test using: npm test
+=============================== RUNNING INSTRUCTIONS =======================================
+
+After cloning the project, 
+
+Run using: npm start
+Test using: npm test
 
 Node version: v18.4.0
+
+
+Assumption: Once a mower is done executing the command sequence, it is removed from the lawn.
