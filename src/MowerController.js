@@ -15,6 +15,8 @@ export default class MowerController {
           case 'F':
             this.lawnMower.advanceLawnMowerForwardOneStep();
             break;
+          default:
+            console.error(`Error in function executeMovementAndOrientationSequence. ${sequenceCommand} should be one of L,R,F`);
         }
       })
     }

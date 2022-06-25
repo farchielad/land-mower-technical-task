@@ -24,6 +24,8 @@ export default class LawnMower {
         return (directionIndex === (CARDINAL_DIRECTIONS.length - 1))
             ? CARDINAL_DIRECTIONS[0]
             : CARDINAL_DIRECTIONS[directionIndex + 1];
+
+    console.error(`function _rotateLawnMower90DegreesToDirection expected direction input of left or right, but recieved ${direction}`)
   }
 
   rotateLawnMower90DegreesLeft() {
@@ -35,7 +37,13 @@ export default class LawnMower {
   }
 
   _validateIfForwardMoveIsNotOutOfBound(x, y) {
-    return x >= 0 && x <= this.horizontalBoundary && y >= 0 && y <= this.verticalBoundary;
+    const isValidForwardMove= x >= 0 && x <= this.horizontalBoundary && y >= 0 && y <= this.verticalBoundary
+    if (!isValidForwardMove) {
+        console.error(`${x},${y} is an out of bound move`);
+        return false;
+    }
+
+    return true;
   }
 
   advanceLawnMowerForwardOneStep() {
